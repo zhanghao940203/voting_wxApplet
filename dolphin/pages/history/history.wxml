@@ -1,0 +1,57 @@
+<!-- <view class='container'>
+  <view class='userinfo'>
+    <image class="userinfo-avatar" src="{{globalData.userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class='history-list'>
+    <view class='history-item' wx:for="{{history}}">
+      <image class='works-image' src='{{item.portrait}}'></image>
+      <text class='works-name'>{{item.origName}}</text>
+      <text class='shrimpPaied'>为他投资：{{item.vote}}万个贝壳</text>
+    </view>
+  </view>
+</view> -->
+
+<!--pages/my.wxml-->
+<view class='container'>
+  <view class="userinfo">
+    <view class='userinfo_left'>
+      <open-data type="userAvatarUrl"></open-data>
+      
+      <!-- <image style="width: 90px; height: 90px;" src="{{globalData.userInfo.avatarUrl}}"></image> -->
+    </view>
+    <view class='userinfo_right'>
+      <view class='right_up'>
+        <open-data type="userNickName"></open-data>
+        <!-- <text>{{userInfo.nickName}}</text> -->
+      </view>
+      <view class='right_down'>
+        <text>剩余贝壳：{{globalData.userData.balance}}万个</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='wodetoupiao'>
+    <text style="margin-left: 5%;color: #999;">我的投资</text>
+  </view>
+  
+  <scroll-view class="scroll-list" scroll-y="true">
+    <view class="works" wx:for="{{history}}" >
+      <view class="cell_item">
+        <view class="cell_left">
+          <image style="width: 60px; height: 60px; " src="{{item.portrait}}"></image>
+
+        </view>
+        <view class="cell_right">
+          <view class="cell_title">
+            <text>{{item.origName}}</text>
+          </view>
+          <view style="color: #999999">
+            <text>已投喂这只小海豚：{{item.vote}}万个海贝</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>   
+  
+</view>

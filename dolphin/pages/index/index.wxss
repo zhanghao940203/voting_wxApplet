@@ -1,0 +1,141 @@
+.logininfo{
+  display: flex;
+}
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  font-size: 40px;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.logo{
+	width:900rpx;
+  height:600rpx;
+  margin:0 auto;
+  /* margin-right:30px; */
+
+}
+.boc{
+	width: 300rpx;
+	height: 80rpx;
+  margin: 0 auto;
+}
+.img{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  /* margin: 67% 12.5% auto 12.5%; */
+  align-items: center;
+  position: absolute; 
+  top: 10%
+}
+.img1{
+  position: absolute; 
+  top: 1%;
+  left:1%
+}
+.body{
+    height:100%;
+    width:100%;
+    /* background-color:rgb(214, 253, 253); */
+    position: fixed;
+    opacity:0.8;
+    /* border: 5px solid #fff */
+}
+.img2{
+	width: 100%;
+	height: 100%;
+  position: absolute; 
+  left:0%;
+  top: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logininfo{
+  display: flex;
+	flex-direction:column;
+  /* align-items: center; */
+  align-self: center;
+  margin-top: 30px;
+  width:300px;
+}
+.idtext{
+  text-align:center;
+  font-size: 50rpx;
+  font-weight: bold;
+}
+.nametext{
+  text-align:center;
+  font-size: 50rpx;
+  font-weight: bold;
+}
+.form{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  margin-top: 67%;
+  /* margin: 67% 12.5% auto 12.5%; */
+  align-items: center;
+}
+
+.nameinput{
+  width:100%;
+  text-align:center;
+  height:40px;
+  margin-top:15px;
+  border-radius: 0.3em;
+  margin-bottom: 15px;
+  BACKGROUND-COLOR: #fff;
+}
+.idinput{
+  width:100%;
+  text-align:center;
+  height:40px;
+  margin-top: 15px;
+  border-radius: 0.3em;
+  BACKGROUND-COLOR: #fff;
+}
+.loginButton{
+  background-color: rgba(20, 132, 238, 0.925);
+  color: #fff;
+  margin-bottom: 1%;
+  font-weight: bold;
+  font-size:40rpx;
+  width:100%;
+height:40px;
+  display:flex;
+  flex-direction: column;
+  /* margin: 67% 12.5% auto 12.5%; */
+  align-items: center;
+  margin-top:30px;
+  line-height:40px;
+}
+.img3{
+  position:absolute;
+  right:0%;
+  bottom:0%;
+}
+.newlogo{
+  width: 300rpx;
+	height: 80rpx;
+  margin: 0 auto;
+}
+page{
+  background:#f3f3f3;
+}

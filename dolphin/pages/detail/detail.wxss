@@ -1,0 +1,160 @@
+.page{
+  background-color: #f3f3f3;
+}
+.votebutton{
+  background-color: rgba(20, 132, 238, 0.925);
+  color: #fff;
+  font-weight: bold;
+  font-size:40rpx;
+  position: fixed; 
+  bottom: 0%;
+  left:0%;
+  width:100%;
+  opacity: 0.8;
+}
+.button{
+    position: fixed;
+    bottom: 0%;
+    left:0%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.balance{
+    position: fixed;
+    top: 10rpx;
+    right: 5rpx;
+    text-align: center;
+    font-size: 25rpx;
+    color: rgb(92, 91, 91);
+    font-weight: bold;
+}
+.worksinfo{
+    height:200rpx;
+    width:100%;
+    background-color:rgb(255, 255, 255);
+    opacity:0.9;
+    border: 5rpx solid #f3f3f3;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.background{
+    width:100%;
+    background-color:rgb(255, 255, 255);
+    opacity:0.9;
+    border: 5rpx solid #f3f3f3;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+}
+.abstract{
+    width:100%;
+    background-color:rgb(255, 255, 255);
+    opacity:0.9;
+    border: 5rpx solid #f3f3f3;
+    display: flex;
+    align-items: center;
+    
+    /* white-space: pre-line; */
+    padding: 20rpx
+}
+.slide{
+    width: 100%;
+}
+.intro{
+    font-size: 35rpx;
+    font-weight: bold;
+    text-align: left;
+}
+.photo{
+    height:150rpx;
+    width:150rpx;
+    border-radius: 100%;
+}
+.userinfo{
+    font-size: 35rpx;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    position: absolute; 
+    left:180rpx;
+}
+.worksName{
+    font-size: 35rpx;
+    font-weight: bold;
+    text-align: left;
+}
+.teamsName{
+    font-size: 35rpx;
+    font-weight: bold;
+    text-align: left;
+}
+.member{
+    display: flex;
+    flex-direction: row;
+}
+.teammember{
+    font-size: 25rpx;
+    text-align: left;
+}
+.context{
+    width:95%;
+    font-size: 30rpx;
+    color:rgba(31, 30, 30, 0.808);
+    text-align: left;
+    word-break:break-all;
+    padding: 20rpx;
+}
+.model-view{
+    width: 100%;
+    height: 420rpx;
+    background-color: rgba(0,0,0);
+    border: 1rpx solid #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.model-btn{
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+    width:100rpx;
+    height:100rpx;
+    border-radius:50%;
+    background-color: rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+}
+.play-icon{
+    margin:28rpx 42rpx;
+    border-top:26rpx solid transparent;
+    border-left:36rpx solid #fff;
+    border-bottom:22rpx solid transparent;
+}
+.video{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 40rpx;
+    position: relative;
+}
+.mod{
+  position: absolute;
+  z-index: 9999;
+}
+.divLine{
+  background: #fff;
+  width: 100%;
+  height: 10rpx;
+}
+.whitebox{
+  width:100%;
+  height:95rpx;
+}

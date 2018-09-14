@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<!-- <view class="img2"  style="background: url('https://origvote-test-1257216967.cos.ap-beijing.myqcloud.com/project-imags/background.jpg') no-repeat;background-size: 100% 100%; ;position:fixed; top:0rpx;"> -->
+<view class="body">
+
+    <view class="img1">
+      <image class="boc" src="BOC.png"></image>
+    </view>
+    <view class="img">
+      <image class="logo" src="oldlogo.png"></image>
+    </view>
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>      
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+
+  <form class="form" bindsubmit="bindFormSubmit"> 
+    <view class="logininfo">
+      <!-- <label class="nametext" for="userNameInput">姓名</label> -->
+      <input class="nameinput" id="userNameInput" name="userName" type="text" placeholder="姓名" maxlength="10" />
+      <!--自动聚焦 最大长度为10  -->    
+    
+    
+      <!-- <label class="idtext" for="userIdInput">\n工号</label> -->
+      <input  class="idinput" id="userIdInput" name="userId" password type="number" placeholder="四位工号" maxlength="10" />
+    </view>
+    <button class="loginButton" formType="submit">登录</button>
+  </form>
+
+  
+  <view class="img3">
+    <image class="newlogo" src="logo.png"></image>
+  </view>
+
+<!-- 调用modal组件 -->
+<!-- <modal modal-hidden="{{is_modal_Hidden}}" modal-msg="{{is_modal_Msg}}"/> -->
+
+
+
+<!-- </view> -->
+<!-- </view> -->
+</view>

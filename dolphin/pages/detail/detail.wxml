@@ -1,0 +1,43 @@
+<view class="worksinfo">
+  \n
+  <image class="photo" src="{{details.portrait}}"></image>
+  <view class="userinfo">
+    <text class='worksName'>{{details.origName}}</text>
+    <text class="teamsName">{{details.teamName}}</text>
+    <view class="member">
+    <text class="teammember" >{{details.members}}</text>
+    </view>
+  </view>
+</view>
+<!-- <swiper>标签放到了下面 -->
+<text class="intro">成果展示: </text>
+<swiper autoplay="true" circular="true" interval="5000" duration="1000">
+  <block wx:for="{{details.images}}">
+    <swiper-item>
+      <image class="slide" src="{{item}}" mode="aspectFit" bindtap='previewImg' data-index="{{index}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+\n<view class="divLine"></view>
+<!-- </view> -->
+<text class="intro">背景：</text>
+<view class="background">
+  
+  <text class="context">\n{{details.background}}</text>
+</view>
+\n<view class="divLine"></view>
+<text class="intro">简介：</text>
+<view class="abstract">
+  
+  <text class="context">\n{{details.orig}}</text>
+</view>
+<view class="whitebox"></view>
+<view class="balance">您还剩余：<text class="balance-number">{{globalData.userData.balance}}万个贝壳</text></view>
+<view class="button">
+<button class="votebutton" bindtap="bindVoteButton">为他投票</button>
+</view>
+<modal class="mod" hidden="{{hiddenmodalput}}" title="请输入投资贝壳数数：" confirm-text="提交" cancel-text="取消" bindcancel="cancle" bindconfirm="submit">
+<form name="myform">
+<input wx:if="{{!hiddenmodalput}}" bindinput="bindShrimpInput" value="{{shrimp}}" type='number' name="nn" placeholder="请输入贝壳数（万个）" auto-focus/>
+</form>
+</modal>

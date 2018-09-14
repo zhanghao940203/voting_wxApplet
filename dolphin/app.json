@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/detail/detail",
+    "pages/history/history",
+    "pages/list/list",
+    "pages/rank/rank"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小海豚创新大赛在线投票",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#CCC",
+    "list": [
+      {
+        "iconPath": "images/list_unselected.png",
+        "selectedIconPath": "images/list.png",
+        "pagePath": "pages/list/list"
+      },
+      {
+        "iconPath": "images/rank_unselected.png",
+        "selectedIconPath": "images/rank.png",
+        "pagePath": "pages/rank/rank"
+      },
+      {
+        "iconPath": "images/my_unselected.png",
+        "selectedIconPath": "images/my.png",
+        "pagePath": "pages/history/history"
+      }
+    ]
+  }
+}

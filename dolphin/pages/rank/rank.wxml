@@ -1,0 +1,24 @@
+<!--pages/rank.wxml-->
+<view wx:if="{{!qulify}}" class="deny">
+  <image class="smallpic" src="https://origvote-test-1257216967.cos.ap-beijing.myqcloud.com/project-imags/uncomplete.jpg"></image>
+</view>
+<view wx:else class="rank">
+   <view class="divLine"></view>
+  <scroll-view class="scroll-list" scroll-y="true" bindscrolltoupper="reload">
+    <view class="works" wx:for="{{briefOrigList}}" bindtap="bindDetail" data-worksid="{{item.origId}}">
+      <view class="rankno">{{index+1}}. </view>
+      <view class="worksimage">
+        <image class="photo" src="{{item.portrait}}"></image>
+      </view>
+      <view class="intro">
+        <view class="userinfo">
+          <view class="worksname"><text>{{item.origName}}———</text></view>
+          <view class="teamname"><text>{{item.teamName}}</text></view>
+        </view>
+      </view>
+      <view class="score">
+        <text class="point">得{{item.vote}}票</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

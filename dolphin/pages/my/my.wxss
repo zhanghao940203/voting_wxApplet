@@ -1,0 +1,73 @@
+/* pages/my.wxss */
+
+.container {
+  background-color: #f3f3f3;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0px 0;
+  height: 100vh;
+}
+
+.userinfo {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.userinfo_left {
+  padding-left: 5%;
+}
+
+.userinfo_right {
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+
+.right_down {
+  display: flex;
+  flex-direction: row;
+}
+
+.chakanpaiming {
+  padding-left: 50px;
+  color: #5a5ccc;
+}
+
+.wodetoupiao {
+  border-bottom: 2px solid #f3f3f3;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cell_item {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  border-bottom: 2px solid #f3f3f3;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.cell_left {
+  margin-left: 5%;
+}
+
+.cell_right {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}

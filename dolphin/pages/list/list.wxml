@@ -1,0 +1,30 @@
+<view class="container"> 
+  <!-- <view class="balance">您的可用余额为：<text class="balance-number-text">{{globalData.userData.balance}}</text>万元</view> -->
+  <view class="divLine"></view>
+  <view class="bgimg">
+    <image class="bg" src="bg.jpg"></image>
+  </view>
+  <scroll-view class="scroll-list" scroll-y="true">
+    <view class="works" wx:for="{{briefOrigList}}" bindtap="bindDetail" data-worksid="{{item.origId}}">
+      <view class="worksimage">
+        <image class="photo" src="{{item.portrait}}"></image>
+      </view>
+      <view class="intro">
+        <view class="userinfo">
+          <view class="worksname"><text>{{item.origName}}———</text></view>
+          <view class="teamname"><text>{{item.teamName}}</text></view>
+        </view>
+        <view class="members">
+          <text class="teammember">{{item.members}}</text>
+        </view>
+        <view class="keywords"><text class="keyword">关键字：{{item.keywords}}</text></view>
+      </view>
+    </view>
+  </scroll-view>
+  <view >
+   <button wx:if="{{!complete}}" class="completebutton" bindtap="bindCompleteButton" id="finalBtn" style="background:{{viewBg}}">结束投票</button>
+      <button wx:else class="completebutton" id="finalBtn" style="background:{{viewBg}}">结束投票</button>
+  </view>
+  <!-- <button id='ruleBtn' bindtap="bindRuleButton">规则</button> -->
+  <image id='ruleBtn' src="rule.png" bindtap="bindRuleButton"></image>
+</view> 
